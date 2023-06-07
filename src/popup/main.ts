@@ -5,4 +5,5 @@ import '../styles'
 
 const app = createApp(App)
 setupApp(app)
+
 app.mount('#app')
