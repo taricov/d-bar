@@ -1,4 +1,4 @@
-html,
+/* html,
 body,
 #app {
   margin: 0;
@@ -17,4 +17,31 @@ body,
     opacity-75 transition duration-200 ease-in-out
     hover:opacity-100 hover:text-teal-600;
   font-size: 0.9em;
+} */
+
+#dont_change_mystyles{
+  font-weight: 200;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  direction: ltr;
 }
+
+
+.shd {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+  ::-webkit-scrollbar-track {
+  background: none !important
+}
+  ::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.4) !important;
+  border-radius:10px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,.5) !important;
+  background: #ddd !important 
+} 

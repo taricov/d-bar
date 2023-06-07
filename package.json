@@ -1,10 +1,9 @@
 {
-  "name": "vitesse-webext",
-  "displayName": "Vitesse WebExt",
-  "version": "0.0.1",
-  "private": true,
-  "packageManager": "pnpm@8.3.1",
-  "description": "[description]",
+  "name": "d-bar",
+  "displayName": "D-Bar",
+  "version": "1.0.0",
+  "packageManager": "pnpm@7.29.0",
+  "description": "D-Bar is a web utility and an extension app that helps in magic search/access over Daftra ERP",
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
     "dev-firefox": "npm run clear && cross-env NODE_ENV=development EXTENSION=firefox run-p dev:*",
