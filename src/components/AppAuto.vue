@@ -8,7 +8,7 @@ const isBg = ref<boolean>(false)
 const isTransition = ref<boolean>(false)
 const spotlight = ref<HTMLInputElement>()
 const keys = useMagicKeys()
-whenever(keys['ctrl+d'], () => {
+whenever(keys['ctrl+/'], () => {
   showBar.value = !showBar.value
 })
 
@@ -60,5 +60,6 @@ onMounted(() => {
         </ul>
       </div>
     </div>
+    <AppDial />
   </div>
 </template>
