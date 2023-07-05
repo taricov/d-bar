@@ -60,6 +60,5 @@ onMounted(() => {
         </ul>
       </div>
     </div>
-    <!-- <AppDial /> -->
   </div>
 </template>
