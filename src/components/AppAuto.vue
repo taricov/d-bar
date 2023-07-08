@@ -5,6 +5,7 @@ import { useMagicKeys, whenever } from '@vueuse/core'
 import randoms from '~/logic/random-words'
 const showBar = ref<boolean>(false)
 const isBg = ref<boolean>(false)
+const autoComplete = ref()
 const isTransition = ref<boolean>(false)
 const spotlight = ref<HTMLInputElement>()
 const keys = useMagicKeys()
@@ -21,7 +22,8 @@ const onCommand = () => {
   matches.value = searchList.value = searchList.value.filter(word => word.toLowerCase().includes(searchValue.value.toLowerCase()))
 }
 onMounted(() => {
-//   onCommand()
+  autoComplete.value = 'fefefe'
+  //   onCommand()
   spotlight.value?.focus()
 })
 </script>
@@ -43,7 +45,7 @@ onMounted(() => {
           class="relative !font-semibold grow outline-none m-0 px-3 py-2 h-15 !text-xl block  !text-gray-300 bg-transparent transition duration-150 !border-none"
           @input="onCommand"
         >
-        <span class="absolute flex items-center justify-start top-1/2 px-3 !left-0 transform -translate-y-1/2 font-semibold outline-none h-15 text-xl text-gray-300/30 bg-transparent transition duration-150">{{ "gwaaaffffffffffffffaaaaaa" }}</span>
+        <span ref="autoComplete" class="absolute flex items-center justify-start top-1/2 px-3 !left-0 transform -translate-y-1/2 font-semibold outline-none h-15 text-xl text-gray-300/30 bg-transparent transition duration-150">{{ "" }}</span>
       </form>
       <hr class="border-t-light-50/20 border-b-none m-0">
       <!-- <hr class="!border-gray-100 opacity-40  m-auto"> -->
@@ -60,6 +62,6 @@ onMounted(() => {
         </ul>
       </div>
     </div>
-    <AppDial />
+    <!-- <AppDial /> -->
   </div>
 </template>
